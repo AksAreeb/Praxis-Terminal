@@ -1,0 +1,53 @@
+﻿# Environment Variables (Secrets)
+.env
+.env.*
+
+# Dependencies
+node_modules/
+dist/
+
+# Logs
+src/logs/
+gateway/logs/
+npm-debug.log
+yarn-error.log
+
+# ===== PROPRIETARY — NEVER COMMIT =====
+# Trading intelligence & algorithms
+src/logic/
+src/data/
+src/lib/
+
+# Core system (exposes architecture)
+src/index.ts
+
+# Test files (expose AI model usage & strategy details)
+src/test-*.ts
+src/list-*.ts
+
+# Strategy manifesto
+ai-rules.md
+
+# ===== SECURITY =====
+# Java keystores & certs
+*.jks
+*.pem
+*.key
+*.crt
+
+# Gateway configs (may contain auth tokens)
+gateway/root/conf*.yaml
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+temp-git-files*.txt
+
+# IDE & AI coding tools
+.gemini/
+.cursor/
+.copilot/
+.github/copilot/
+.ai/
