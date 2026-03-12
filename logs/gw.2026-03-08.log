@@ -1,0 +1,101 @@
+00:00:00.269 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|72ms
+00:00:00.271 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"f975bb443fe5fd36c9507a13701cd1ad","ssoExpires":269969,"collission":false,"userId":177867148,"hmds":{"error":"no bridge"},"iserver":{"authStatus":{"authenticated":true,"established":true,"competing":false,"connected":true,"message":"","MAC":"06:C3:7F:FD:B3:CE","serverInfo":{"serverName":"JifC21018","serverVersion":"Build 10.44.1c, Feb 19, 2026 9:42:36 AM"},"hardware_info":"8039724d|06:C3:7F:FD:B3:CE"}}}
+00:00:30.241 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,500|51ms
+00:00:30.241 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/tickle | reason {"error":"No available healthy target","statusCode":500}
+00:00:30.241 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle null
+00:00:30.243 ERROR vert.x-eventloop-thread-0 ClientPortalService  : tickle cp session failed {}
+io.vertx.core.impl.NoStackTraceThrowable: {"error":"No available healthy target","statusCode":500}
+00:00:30.243 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : cancel timer ClientPortalService 2
+00:00:30.243 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/tickle | reason 500
+00:00:30.243 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle null
+00:00:30.243 ERROR vert.x-eventloop-thread-0 ClientPortalService  : tickle cp session failed {}
+io.vertx.core.impl.NoStackTraceThrowable: 500
+00:00:30.243 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : cancel timer ClientPortalService 0
+00:00:30.243 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event ON_CP_TICKLE_FAILED, payload none
+00:00:30.281 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event ON_CP_TICKLE_FAILED, payload none
+00:00:30.429 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,500|148ms
+00:00:30.429 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason {"error":"No available healthy target","statusCode":500}
+00:00:30.429 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:30.430 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 2
+io.vertx.core.impl.NoStackTraceThrowable: {"error":"No available healthy target","statusCode":500}
+00:00:30.430 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason 500
+00:00:30.430 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:30.430 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 2
+io.vertx.core.impl.NoStackTraceThrowable: 500
+00:00:30.430 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:30.430 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:30.430 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:30.430 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:30.433 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,500|190ms
+00:00:30.434 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason {"error":"No available healthy target","statusCode":500}
+00:00:30.434 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:30.434 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 2
+io.vertx.core.impl.NoStackTraceThrowable: {"error":"No available healthy target","statusCode":500}
+00:00:30.434 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason 500
+00:00:30.434 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:30.434 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 2
+io.vertx.core.impl.NoStackTraceThrowable: 500
+00:00:30.434 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:30.434 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:30.434 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:30.434 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:33.493 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,500|52ms
+00:00:33.493 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason {"error":"No available healthy target","statusCode":500}
+00:00:33.493 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:33.493 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 6
+io.vertx.core.impl.NoStackTraceThrowable: {"error":"No available healthy target","statusCode":500}
+00:00:33.493 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : giving up ...
+00:00:33.493 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason 500
+00:00:33.493 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:33.493 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 6
+io.vertx.core.impl.NoStackTraceThrowable: 500
+00:00:33.493 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : giving up ...
+00:00:33.493 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:33.493 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:33.493 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:33.493 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:33.493 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,500|51ms
+00:00:33.493 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason {"error":"No available healthy target","statusCode":500}
+00:00:33.493 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:33.493 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 6
+io.vertx.core.impl.NoStackTraceThrowable: {"error":"No available healthy target","statusCode":500}
+00:00:33.493 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : giving up ...
+00:00:33.493 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason 500
+00:00:33.493 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:33.493 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 6
+io.vertx.core.impl.NoStackTraceThrowable: 500
+00:00:33.493 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : giving up ...
+00:00:33.493 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:33.493 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:33.493 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:33.493 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:33.530 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,500|88ms
+00:00:33.530 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason {"error":"No available healthy target","statusCode":500}
+00:00:33.530 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:33.530 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 6
+io.vertx.core.impl.NoStackTraceThrowable: {"error":"No available healthy target","statusCode":500}
+00:00:33.530 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : giving up ...
+00:00:33.530 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason 500
+00:00:33.530 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:33.530 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 6
+io.vertx.core.impl.NoStackTraceThrowable: 500
+00:00:33.530 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : giving up ...
+00:00:33.530 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:33.530 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:33.532 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:33.532 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:33.630 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,500|188ms
+00:00:33.631 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason {"error":"No available healthy target","statusCode":500}
+00:00:33.631 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:33.631 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 6
+io.vertx.core.impl.NoStackTraceThrowable: {"error":"No available healthy target","statusCode":500}
+00:00:33.631 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : giving up ...
+00:00:33.631 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason 500
+00:00:33.631 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+00:00:33.631 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 6
+io.vertx.core.impl.NoStackTraceThrowable: 500
+00:00:33.631 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : giving up ...
+00:00:33.631 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:33.631 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+00:00:33.631 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+00:00:33.631 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED

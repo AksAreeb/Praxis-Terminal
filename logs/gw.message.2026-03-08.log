@@ -1,0 +1,16 @@
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,500|51ms
+-> request: /v1/api/sso/validate?gw=1
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,500|148ms
+-> GET /v1/api/sso/validate?gw=1,500|190ms
+-> request: /v1/api/sso/validate?gw=1
+-> request: /v1/api/sso/validate?gw=1
+-> request: /v1/api/sso/validate?gw=1
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,500|52ms
+-> GET /v1/api/sso/validate?gw=1,500|51ms
+-> GET /v1/api/sso/validate?gw=1,500|88ms
+-> GET /v1/api/sso/validate?gw=1,500|188ms

@@ -1,8 +1,8 @@
 @echo off
 
 rem example setting a JAVA_HOME and adding to PATH
-#set JAVA_HOME=c:\jdk
-#set PATH=%JAVA_HOME%\bin;%PATH%
+rem set JAVA_HOME=c:\jdk
+rem set PATH=%JAVA_HOME%\bin;%PATH%
 
 if exist %1 goto FOUND_CONF
 echo "usage: %0 /path/to/conf.yaml"
@@ -13,7 +13,8 @@ set config_file=%1
 for /F %%i in ("%config_file%") do set config_path=%%~dpi
 echo "config path :%config_path%"
 
-set RUNTIME_PATH="%config_path%;dist\ibgroup.web.core.iblink.router.clientportal.gw.jar;build\lib\runtime\*"
+set GATEWAY_DIR=%~dp0..
+set RUNTIME_PATH="%config_path%;%GATEWAY_DIR%\dist\ibgroup.web.core.iblink.router.clientportal.gw.jar;%GATEWAY_DIR%\build\lib\runtime\*"
 
 echo "running %verticle% "
 echo "runtime path : %RUNTIME_PATH%"
